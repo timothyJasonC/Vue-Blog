@@ -1,15 +1,14 @@
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
 
-// Konfigurasi Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyDyli35r1NMyWkOCPT278v1GOUJoXeNxkk",
-    authDomain: "vue-blog-31cdf.firebaseapp.com",
-    projectId: "vue-blog-31cdf",
-    storageBucket: "vue-blog-31cdf.appspot.com",
-    messagingSenderId: "581383221467",
-    appId: "1:581383221467:web:561b65d9129e9247409cfe",
-    measurementId: "G-X48BW0HYLV"
+    apiKey: import.meta.env.VITE_VUE_APP_API_KEY,
+    authDomain: import.meta.env.VITE_VUE_APP_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_VUE_APP_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_VUE_APP_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_VUE_APP_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_VUE_APP_APP_ID,
+    measurementId: import.meta.env.VITE_VUE_APP_MEASUREMENT_ID
 }
 
 // Inisialisasi Firebase
